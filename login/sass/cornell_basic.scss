@@ -967,6 +967,10 @@ form.compact .description, form.compact legend {
 	margin-bottom: 35px;
 }
 
+#reason{
+	display: none;
+}
+
 #submit{
 	background: #2d668e;
 	color: white;
@@ -981,6 +985,7 @@ form.compact .description, form.compact legend {
 	font-size: 16px;
 	&:hover{
 		background: #2471a7;
+		cursor: pointer;
 	}
 }
 

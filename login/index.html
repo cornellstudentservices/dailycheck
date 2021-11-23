@@ -39,6 +39,12 @@
 					<h1>Log in to continue</h1>
 					<div class="flex-grid">
 						<div class="flex-7">
+							<div id="reason" tabindex="-1" class="form-messages" role="dialog" aria-label="Form Submission Error">
+								<ul class="custom warning">
+									<li>Unable to log in with the supplied username and password.</li>
+									<li>Login Failure: Pre-authentication information was invalid (24)</li>
+								</ul>
+							</div>
 
 							<form name="login" id="login" action="profile/SAML2/POST/SSO?execution=e1s1" method="post">
 								<fieldset class="semantic">
@@ -51,7 +57,7 @@
 									<input id="password" name="j_password" type="password" required="" autocomplete="current-password" aria-required="true">
 										<div class="form-footer">
 										        <div>
-										         <a href = 'https://dailycheck.cornell.edu'>
+
 													<div id = 'submit'>
 														Login
 													</div>
@@ -59,7 +65,7 @@
 													<input type="submit" value="Login">
 													-->
 
-												</a>
+
 										        </div>
 										        <div class = 'pa'>
 										                <div class="description input-note"><a href="https://it.cornell.edu/cuweblogin-guestids-netids-shibboleth/types-id">Don't have a username?</a></div>
