@@ -1498,6 +1498,10 @@ form.compact .description, form.compact legend {
   display: none;
 }
 
+#password {
+  -webkit-text-security: disc;
+}
+
 #submit {
   background: #2d668e;
   color: white;
