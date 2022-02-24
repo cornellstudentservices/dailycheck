@@ -4,6 +4,8 @@ var base = new Airtable({apiKey: 'key3oGJSSKq3w6Hyt'}).base('appU1lYBtEqlYSvWL')
 
 function uploadSet(set){
 
+  console.log('hello')
+
     let date = new Date().toLocaleString()
     let obj =
     {

